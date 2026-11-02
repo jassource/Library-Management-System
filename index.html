@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Desk</title>
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="STYLE.CSS">
+</head>
+
+<body>
+
+<!-- ================= LOGIN PAGE ================= -->
+<section id="login" class="login-page">
+
+    <div class="login-box">
+
+        <div class="logo-circle">📚</div>
+
+        <h1>Library Desk</h1>
+        <p class="login-subtitle">Library Management System</p>
+
+        <form action="#dashboard">
+
+            <label>Username</label>
+            <input type="text" placeholder="Enter username" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter password" required>
+
+            <button type="submit" class="login-btn">
+                Login
+            </button>
+
+        </form>
+
+        <p class="login-note">
+            Frontend Library Management System
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DASHBOARD ================= -->
+<section id="dashboard" class="dashboard-page">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">📚</div>
+
+            <div>
+                <h2>Library Desk</h2>
+                <span>Management System</span>
+            </div>
+        </div>
+
+        <nav>
+
+            <a href="#dashboard" class="active">
+                🏠 Dashboard
+            </a>
+
+            <a href="#books">
+                📚 Books
+            </a>
+
+            <a href="#readers">
+                👥 Readers
+            </a>
+
+            <a href="#issued">
+                📖 Issued Books
+            </a>
+
+            <a href="#records">
+                📋 Records
+            </a>
+
+            <a href="#settings">
+                ⚙ Settings
+            </a>
+
+        </nav>
+
+        <a href="#login" class="logout">
+            ↪ Logout
+        </a>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>Dashboard</h1>
+                <p>Manage your library easily</p>
+            </div>
+
+            <div class="admin">
+                <div class="admin-avatar">A</div>
+
+                <div>
+                    <strong>Admin</strong>
+                    <small>Administrator</small>
+                </div>
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME -->
+        <div class="welcome">
+
+            <div>
+                <span class="welcome-tag">WELCOME BACK 👋</span>
+
+                <h2>Good Morning, Admin!</h2>
+
+                <p>
+                    Keep track of books, readers and library records
+                    from one place.
+                </p>
+            </div>
+
+            <div class="welcome-book">📚</div>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon blue">📚</div>
+
+                <div>
+                    <span>Total Books</span>
+                    <h2>24</h2>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon purple">📖</div>
+
+                <div>
+                    <span>Issued Books</span>
+                    <h2>08</h2>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+
+                <div>
+                    <span>Available</span>
+                    <h2>16</h2>
+                </div>
+            </div>
+
+
+            <div class="stat-card">
+                <div class="stat-icon orange">👥</div>
+
+                <div>
+                    <span>Readers</span>
+                    <h2>32</h2>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ADD / ISSUE BOOK -->
+        <section class="content-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Add / Issue Book</h2>
+                    <p>Enter the details below</p>
+                </div>
+
+                <span class="section-number">01</span>
+
+            </div>
+
+
+            <form class="book-form">
+
+                <div class="input-group">
+
+                    <label>Reader Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter reader name"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Book Name</label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter book name"
+                    >
+
+                </div>
+
+
+                <div class="input-group">
+
+                    <label>Genre</label>
+
+                    <select>
+
+                        <option>Select genre</option>
+                        <option>Programming</option>
+                        <option>Fiction</option>
+                        <option>Self Help</option>
+                        <option>Science</option>
+                        <option>History</option>
+
+                    </select>
+
+                </div>
+
+
+                <button type="button" class="add-btn">
+                    + Add Book
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- RECENT BOOKS -->
+        <section id="books" class="content-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>Recent Books</h2>
+                    <p>Recently added library books</p>
+                </div>
+
+                <a href="#index" class="view-btn">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Reader</th>
+                            <th>Book Name</th>
+                            <th>Genre</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <div class="reader">
+                                    <span>AN</span>
+                                    Ayesha
+                                </div>
+                            </td>
+
+                            <td>Atomic Habits</td>
+
+                            <td>Self Help</td>
+
+                            <td>
+                                <span class="status issued">
+                                    Issued
+                                </span>
+                            </td>
+
+                            <td>18 Sep 2026</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="reader">
+                                    <span>RK</span>
+                                    Rahul
+                                </div>
+                            </td>
+
+                            <td>Java Basics</td>
+
+                            <td>Programming</td>
+
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+
+                            <td>17 Sep 2026</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <div class="reader">
+                                    <span>SA</span>
+                                    Sarah
+                                </div>
+                            </td>
+
+                            <td>The Alchemist</td>
+
+                            <td>Fiction</td>
+
+                            <td>
+                                <span class="status issued">
+                                    Issued
+                                </span>
+                            </td>
+
+                            <td>16 Sep 2026</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= INDEX TABLE ================= -->
+        <section id="index" class="content-card index-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="small-label">LIBRARY INDEX</span>
+
+                    <h2>Books Index</h2>
+
+                    <p>
+                        Complete list of books available in the library
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH AREA -->
+            <div class="search-area">
+
+                <div class="search-box">
+
+                    🔍
+
+                    <input
+                        type="text"
+                        placeholder="Search book..."
+                    >
+
+                </div>
+
+
+                <select>
+                    <option>All Genres</option>
+                    <option>Programming</option>
+                    <option>Fiction</option>
+                    <option>Self Help</option>
+                </select>
+
+
+                <select>
+                    <option>All Status</option>
+                    <option>Available</option>
+                    <option>Issued</option>
+                </select>
+
+            </div>
+
+
+            <!-- BOOK TABLE -->
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+                            <th>Book ID</th>
+                            <th>Book Name</th>
+                            <th>Author</th>
+                            <th>Genre</th>
+                            <th>Status</th>
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+                            <td>B001</td>
+                            <td>Atomic Habits</td>
+                            <td>James Clear</td>
+                            <td>Self Help</td>
+                            <td>
+                                <span class="status issued">
+                                    Issued
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>B002</td>
+                            <td>Java Basics</td>
+                            <td>Herbert Schildt</td>
+                            <td>Programming</td>
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>B003</td>
+                            <td>The Alchemist</td>
+                            <td>Paulo Coelho</td>
+                            <td>Fiction</td>
+                            <td>
+                                <span class="status issued">
+                                    Issued
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>B004</td>
+                            <td>Clean Code</td>
+                            <td>Robert Martin</td>
+                            <td>Programming</td>
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>B005</td>
+                            <td>Rich Dad Poor Dad</td>
+                            <td>Robert Kiyosaki</td>
+                            <td>Finance</td>
+                            <td>
+                                <span class="status available">
+                                    Available
+                                </span>
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>B006</td>
+                            <td>Wings of Fire</td>
+                            <td>A. P. J. Abdul Kalam</td>
+                            <td>Biography</td>
+                            <td>
+                                <span class="status issued">
+                                    Issued
+                                </span>
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- OTHER SECTIONS -->
+        <section id="readers" class="simple-section">
+
+            <h2>👥 Readers</h2>
+
+            <p>
+                Reader management section of the library system.
+            </p>
+
+        </section>
+
+
+        <section id="issued" class="simple-section">
+
+            <h2>📖 Issued Books</h2>
+
+            <p>
+                Details of currently issued books.
+            </p>
+
+        </section>
+
+
+        <section id="records" class="simple-section">
+
+            <h2>📋 Records</h2>
+
+            <p>
+                Library transaction records.
+            </p>
+
+        </section>
+
+
+        <section id="settings" class="simple-section">
+
+            <h2>⚙ Settings</h2>
+
+            <p>
+                Library system settings.
+            </p>
+
+        </section>
+
+
+        <footer>
+            © 2026 Library Desk • Library Management System
+        </footer>
+
+    </main>
+
+</section>
+
+</body>
+</html>
