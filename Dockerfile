@@ -11,3 +11,4 @@ RUN sed -i 's/:80>/:10000>/' /etc/apache2/sites-available/000-default.conf
 COPY . /var/www/html/
 
 EXPOSE 10000
+
